@@ -6,7 +6,7 @@
 ## 3.对象的共享 [代码](https://github.com/vonzhou/JavaConcurrencyInPractice/tree/master/src/main/java/com/vonzhou/learn/jcip/shareobject)
 ## 4.对象的组合 [代码](https://github.com/vonzhou/JavaConcurrencyInPractice/tree/master/src/main/java/com/vonzhou/learn/jcip/composingobjects)
 ## 5.基础构建模块 [代码](https://github.com/vonzhou/JavaConcurrencyInPractice/tree/master/src/main/java/com/vonzhou/learn/jcip/buildingblocks)
-## 6.任务执行 [代码](https://github.com/vonzhou/JavaConcurrencyInPractice/tree/master/src/main/java/com/vonzhou/learn/jcip/taskexecution)
+## 6.任务执行 [代码](https://github.com/vonzhou/JavaConcurrencyInPractice/tree/master/src/main/java/com/vonzhou/learn/jcip/c6_taskexecution)
 ## 7.取消与关闭 [代码](https://github.com/vonzhou/JavaConcurrencyInPractice/tree/master/src/main/java/com/vonzhou/learn/jcip/shutdown)
 ## 8.线程池的使用 [代码](https://github.com/vonzhou/JavaConcurrencyInPractice/tree/master/src/main/java/com/vonzhou/learn/jcip/threadpools)
 ## 10.避免活跃性危险 [代码](https://github.com/vonzhou/JavaConcurrencyInPractice/tree/master/src/main/java/com/vonzhou/learn/jcip/livenesshazards)
