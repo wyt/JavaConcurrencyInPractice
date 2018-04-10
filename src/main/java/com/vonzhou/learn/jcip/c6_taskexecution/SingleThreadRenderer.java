@@ -1,34 +1,36 @@
 package com.vonzhou.learn.jcip.c6_taskexecution;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * SingleThreadRendere
  * <p/>
- * Rendering page elements sequentially
+ * Rendering page elements sequentially 串行地渲染页面元素
  *
  * @author Brian Goetz and Tim Peierls
  */
 public abstract class SingleThreadRenderer {
-    void renderPage(CharSequence source) {
-        renderText(source);
-        List<ImageData> imageData = new ArrayList<ImageData>();
-        for (ImageInfo imageInfo : scanForImageInfo(source))
-            imageData.add(imageInfo.downloadImage());
-        for (ImageData data : imageData)
-            renderImage(data);
-    }
 
-    interface ImageData {
-    }
+  void renderPage(CharSequence source) {
+    renderText(source);
+    List<ImageData> imageData = new ArrayList<ImageData>();
+    for (ImageInfo imageInfo : scanForImageInfo(source))
+      imageData.add(imageInfo.downloadImage());
+    for (ImageData data : imageData)
+      renderImage(data);
+  }
 
-    interface ImageInfo {
-        ImageData downloadImage();
-    }
+  interface ImageData {
+  }
 
-    abstract void renderText(CharSequence s);
+  interface ImageInfo {
+    ImageData downloadImage();
+  }
 
-    abstract List<ImageInfo> scanForImageInfo(CharSequence s);
+  abstract void renderText(CharSequence s);
 
-    abstract void renderImage(ImageData i);
+  abstract List<ImageInfo> scanForImageInfo(CharSequence s);
+
+  abstract void renderImage(ImageData i);
 }
